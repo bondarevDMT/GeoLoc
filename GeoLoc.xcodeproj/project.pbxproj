@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574EDC4A1946D9510080BFEA /* GLUserTrackLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 574EDC491946D9510080BFEA /* GLUserTrackLibrary.m */; };
+		574EDC4D1946DCFD0080BFEA /* GLHorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 574EDC4C1946DCFD0080BFEA /* GLHorizontalScroller.m */; };
+		575635281940826D0004598D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575635271940826D0004598D /* Foundation.framework */; };
+		5756352A1940826D0004598D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575635291940826D0004598D /* CoreGraphics.framework */; };
+		5756352C1940826D0004598D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5756352B1940826D0004598D /* UIKit.framework */; };
+		575635321940826D0004598D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575635301940826D0004598D /* InfoPlist.strings */; };
+		575635341940826D0004598D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 575635331940826D0004598D /* main.m */; };
+		575635381940826D0004598D /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 575635371940826D0004598D /* GLAppDelegate.m */; };
+		5756353A1940826E0004598D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575635391940826E0004598D /* Images.xcassets */; };
+		575635411940826E0004598D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575635401940826E0004598D /* XCTest.framework */; };
+		575635421940826E0004598D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575635271940826D0004598D /* Foundation.framework */; };
+		575635431940826E0004598D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5756352B1940826D0004598D /* UIKit.framework */; };
+		5756354B1940826E0004598D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575635491940826E0004598D /* InfoPlist.strings */; };
+		5756354D1940826E0004598D /* GeoLocTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5756354C1940826E0004598D /* GeoLocTests.m */; };
+		5756355C19408FBD0004598D /* GLRootMapControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5756355A19408FBD0004598D /* GLRootMapControllerViewController.m */; };
+		5756355F1940907A0004598D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5756355E1940907A0004598D /* CoreLocation.framework */; };
+		5756356519409AD80004598D /* bgnd_dark-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756356119409AD80004598D /* bgnd_dark-568h.png */; };
+		5756356619409AD80004598D /* bgnd_dark-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756356219409AD80004598D /* bgnd_dark-568h@2x.png */; };
+		5756356719409AD80004598D /* bgnd_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756356319409AD80004598D /* bgnd_dark.png */; };
+		5756356819409AD80004598D /* bgnd_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756356419409AD80004598D /* bgnd_dark@2x.png */; };
+		575635711940C9170004598D /* GLUserTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 575635701940C9170004598D /* GLUserTrack.m */; };
+		575635771940CE830004598D /* GLUserTrackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575635761940CE830004598D /* GLUserTrackView.m */; };
+		578A61891941CBBA00C67B9A /* GLMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A61881941CBBA00C67B9A /* GLMapPoint.m */; };
+		578A618C1941CC4F00C67B9A /* GLMapPointSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A618B1941CC4F00C67B9A /* GLMapPointSelf.m */; };
+		57F6CEC3194325B30074C616 /* GLUserTrackForSaved.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F6CEC2194325B30074C616 /* GLUserTrackForSaved.m */; };
+		84F9D30F1948459200F48D23 /* FoundMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3031948459200F48D23 /* FoundMe.png */; };
+		84F9D3101948459200F48D23 /* FoundMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3041948459200F48D23 /* FoundMe@2x.png */; };
+		84F9D3111948459200F48D23 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3051948459200F48D23 /* menu.png */; };
+		84F9D3121948459200F48D23 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3061948459200F48D23 /* menu@2x.png */; };
+		84F9D3131948459200F48D23 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3071948459200F48D23 /* point.png */; };
+		84F9D3141948459200F48D23 /* point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3081948459200F48D23 /* point@2x.png */; };
+		84F9D3151948459200F48D23 /* recOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D3091948459200F48D23 /* recOff.png */; };
+		84F9D3161948459200F48D23 /* recOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D30A1948459200F48D23 /* recOff@2x.png */; };
+		84F9D3171948459200F48D23 /* recOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D30B1948459200F48D23 /* recOn.png */; };
+		84F9D3181948459200F48D23 /* recOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D30C1948459200F48D23 /* recOn@2x.png */; };
+		84F9D3191948459200F48D23 /* selfPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D30D1948459200F48D23 /* selfPoint.png */; };
+		84F9D31A1948459200F48D23 /* selfPoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F9D30E1948459200F48D23 /* selfPoint@2x.png */; };
+		84FE656D194827E100E8B04A /* GLRootMapControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE656C194827E100E8B04A /* GLRootMapControllerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		575635441940826E0004598D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5756351C1940826D0004598D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575635231940826D0004598D;
+			remoteInfo = GeoLoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		574EDC481946D9510080BFEA /* GLUserTrackLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserTrackLibrary.h; sourceTree = "<group>"; };
+		574EDC491946D9510080BFEA /* GLUserTrackLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserTrackLibrary.m; sourceTree = "<group>"; };
+		574EDC4B1946DCFD0080BFEA /* GLHorizontalScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHorizontalScroller.h; sourceTree = "<group>"; };
+		574EDC4C1946DCFD0080BFEA /* GLHorizontalScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHorizontalScroller.m; sourceTree = "<group>"; };
+		575635241940826D0004598D /* GeoLoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575635271940826D0004598D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		575635291940826D0004598D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5756352B1940826D0004598D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5756352F1940826D0004598D /* GeoLoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoLoc-Info.plist"; sourceTree = "<group>"; };
+		575635311940826D0004598D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		575635331940826D0004598D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		575635351940826D0004598D /* GeoLoc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoLoc-Prefix.pch"; sourceTree = "<group>"; };
+		575635361940826D0004598D /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		575635371940826D0004598D /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		575635391940826E0004598D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5756353F1940826E0004598D /* GeoLocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575635401940826E0004598D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		575635481940826E0004598D /* GeoLocTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoLocTests-Info.plist"; sourceTree = "<group>"; };
+		5756354A1940826E0004598D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5756354C1940826E0004598D /* GeoLocTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocTests.m; sourceTree = "<group>"; };
+		5756355919408FBD0004598D /* GLRootMapControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRootMapControllerViewController.h; sourceTree = "<group>"; };
+		5756355A19408FBD0004598D /* GLRootMapControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRootMapControllerViewController.m; sourceTree = "<group>"; };
+		5756355E1940907A0004598D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5756356119409AD80004598D /* bgnd_dark-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgnd_dark-568h.png"; path = "Image/bgnd_dark-568h.png"; sourceTree = SOURCE_ROOT; };
+		5756356219409AD80004598D /* bgnd_dark-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgnd_dark-568h@2x.png"; path = "Image/bgnd_dark-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		5756356319409AD80004598D /* bgnd_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgnd_dark.png; path = Image/bgnd_dark.png; sourceTree = SOURCE_ROOT; };
+		5756356419409AD80004598D /* bgnd_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bgnd_dark@2x.png"; path = "Image/bgnd_dark@2x.png"; sourceTree = SOURCE_ROOT; };
+		5756356F1940C9160004598D /* GLUserTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserTrack.h; sourceTree = "<group>"; };
+		575635701940C9170004598D /* GLUserTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserTrack.m; sourceTree = "<group>"; };
+		575635751940CE830004598D /* GLUserTrackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserTrackView.h; sourceTree = "<group>"; };
+		575635761940CE830004598D /* GLUserTrackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserTrackView.m; sourceTree = "<group>"; };
+		578A61871941CBBA00C67B9A /* GLMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMapPoint.h; sourceTree = "<group>"; };
+		578A61881941CBBA00C67B9A /* GLMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMapPoint.m; sourceTree = "<group>"; };
+		578A618A1941CC4F00C67B9A /* GLMapPointSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMapPointSelf.h; sourceTree = "<group>"; };
+		578A618B1941CC4F00C67B9A /* GLMapPointSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMapPointSelf.m; sourceTree = "<group>"; };
+		57F6CEC1194325B30074C616 /* GLUserTrackForSaved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUserTrackForSaved.h; sourceTree = "<group>"; };
+		57F6CEC2194325B30074C616 /* GLUserTrackForSaved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUserTrackForSaved.m; sourceTree = "<group>"; };
+		84F9D3031948459200F48D23 /* FoundMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FoundMe.png; path = Image/FoundMe.png; sourceTree = SOURCE_ROOT; };
+		84F9D3041948459200F48D23 /* FoundMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FoundMe@2x.png"; path = "Image/FoundMe@2x.png"; sourceTree = SOURCE_ROOT; };
+		84F9D3051948459200F48D23 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Image/menu.png; sourceTree = SOURCE_ROOT; };
+		84F9D3061948459200F48D23 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Image/menu@2x.png"; sourceTree = SOURCE_ROOT; };
+		84F9D3071948459200F48D23 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = point.png; path = Image/point.png; sourceTree = SOURCE_ROOT; };
+		84F9D3081948459200F48D23 /* point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "point@2x.png"; path = "Image/point@2x.png"; sourceTree = SOURCE_ROOT; };
+		84F9D3091948459200F48D23 /* recOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recOff.png; path = Image/recOff.png; sourceTree = SOURCE_ROOT; };
+		84F9D30A1948459200F48D23 /* recOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "recOff@2x.png"; path = "Image/recOff@2x.png"; sourceTree = SOURCE_ROOT; };
+		84F9D30B1948459200F48D23 /* recOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recOn.png; path = Image/recOn.png; sourceTree = SOURCE_ROOT; };
+		84F9D30C1948459200F48D23 /* recOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "recOn@2x.png"; path = "Image/recOn@2x.png"; sourceTree = SOURCE_ROOT; };
+		84F9D30D1948459200F48D23 /* selfPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selfPoint.png; path = Image/selfPoint.png; sourceTree = SOURCE_ROOT; };
+		84F9D30E1948459200F48D23 /* selfPoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selfPoint@2x.png"; path = "Image/selfPoint@2x.png"; sourceTree = SOURCE_ROOT; };
+		84FE656C194827E100E8B04A /* GLRootMapControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLRootMapControllerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575635211940826D0004598D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5756355F1940907A0004598D /* CoreLocation.framework in Frameworks */,
+				5756352A1940826D0004598D /* CoreGraphics.framework in Frameworks */,
+				5756352C1940826D0004598D /* UIKit.framework in Frameworks */,
+				575635281940826D0004598D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5756353C1940826E0004598D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575635411940826E0004598D /* XCTest.framework in Frameworks */,
+				575635431940826E0004598D /* UIKit.framework in Frameworks */,
+				575635421940826E0004598D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5756351B1940826D0004598D = {
+			isa = PBXGroup;
+			children = (
+				5756352D1940826D0004598D /* GeoLoc */,
+				575635461940826E0004598D /* GeoLocTests */,
+				575635261940826D0004598D /* Frameworks */,
+				575635251940826D0004598D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575635251940826D0004598D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575635241940826D0004598D /* GeoLoc.app */,
+				5756353F1940826E0004598D /* GeoLocTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575635261940826D0004598D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5756355E1940907A0004598D /* CoreLocation.framework */,
+				575635271940826D0004598D /* Foundation.framework */,
+				575635291940826D0004598D /* CoreGraphics.framework */,
+				5756352B1940826D0004598D /* UIKit.framework */,
+				575635401940826E0004598D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5756352D1940826D0004598D /* GeoLoc */ = {
+			isa = PBXGroup;
+			children = (
+				575635361940826D0004598D /* GLAppDelegate.h */,
+				575635371940826D0004598D /* GLAppDelegate.m */,
+				5756355819408F7B0004598D /* Model */,
+				5756355619408F630004598D /* View */,
+				5756355719408F710004598D /* Controller */,
+				5756356019409AC50004598D /* Images */,
+				575635391940826E0004598D /* Images.xcassets */,
+				5756352E1940826D0004598D /* Supporting Files */,
+			);
+			path = GeoLoc;
+			sourceTree = "<group>";
+		};
+		5756352E1940826D0004598D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5756352F1940826D0004598D /* GeoLoc-Info.plist */,
+				575635301940826D0004598D /* InfoPlist.strings */,
+				575635331940826D0004598D /* main.m */,
+				575635351940826D0004598D /* GeoLoc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		575635461940826E0004598D /* GeoLocTests */ = {
+			isa = PBXGroup;
+			children = (
+				5756354C1940826E0004598D /* GeoLocTests.m */,
+				575635471940826E0004598D /* Supporting Files */,
+			);
+			path = GeoLocTests;
+			sourceTree = "<group>";
+		};
+		575635471940826E0004598D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				575635481940826E0004598D /* GeoLocTests-Info.plist */,
+				575635491940826E0004598D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5756355619408F630004598D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				575635751940CE830004598D /* GLUserTrackView.h */,
+				575635761940CE830004598D /* GLUserTrackView.m */,
+				574EDC4B1946DCFD0080BFEA /* GLHorizontalScroller.h */,
+				574EDC4C1946DCFD0080BFEA /* GLHorizontalScroller.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5756355719408F710004598D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5756355919408FBD0004598D /* GLRootMapControllerViewController.h */,
+				5756355A19408FBD0004598D /* GLRootMapControllerViewController.m */,
+				84FE656C194827E100E8B04A /* GLRootMapControllerViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5756355819408F7B0004598D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				574EDC481946D9510080BFEA /* GLUserTrackLibrary.h */,
+				574EDC491946D9510080BFEA /* GLUserTrackLibrary.m */,
+				57F6CEC1194325B30074C616 /* GLUserTrackForSaved.h */,
+				57F6CEC2194325B30074C616 /* GLUserTrackForSaved.m */,
+				5756356F1940C9160004598D /* GLUserTrack.h */,
+				575635701940C9170004598D /* GLUserTrack.m */,
+				578A61871941CBBA00C67B9A /* GLMapPoint.h */,
+				578A61881941CBBA00C67B9A /* GLMapPoint.m */,
+				578A618A1941CC4F00C67B9A /* GLMapPointSelf.h */,
+				578A618B1941CC4F00C67B9A /* GLMapPointSelf.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5756356019409AC50004598D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5756356119409AD80004598D /* bgnd_dark-568h.png */,
+				5756356219409AD80004598D /* bgnd_dark-568h@2x.png */,
+				5756356319409AD80004598D /* bgnd_dark.png */,
+				5756356419409AD80004598D /* bgnd_dark@2x.png */,
+				84F9D3031948459200F48D23 /* FoundMe.png */,
+				84F9D3041948459200F48D23 /* FoundMe@2x.png */,
+				84F9D3051948459200F48D23 /* menu.png */,
+				84F9D3061948459200F48D23 /* menu@2x.png */,
+				84F9D3071948459200F48D23 /* point.png */,
+				84F9D3081948459200F48D23 /* point@2x.png */,
+				84F9D3091948459200F48D23 /* recOff.png */,
+				84F9D30A1948459200F48D23 /* recOff@2x.png */,
+				84F9D30B1948459200F48D23 /* recOn.png */,
+				84F9D30C1948459200F48D23 /* recOn@2x.png */,
+				84F9D30D1948459200F48D23 /* selfPoint.png */,
+				84F9D30E1948459200F48D23 /* selfPoint@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		575635231940826D0004598D /* GeoLoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575635501940826E0004598D /* Build configuration list for PBXNativeTarget "GeoLoc" */;
+			buildPhases = (
+				575635201940826D0004598D /* Sources */,
+				575635211940826D0004598D /* Frameworks */,
+				575635221940826D0004598D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoLoc;
+			productName = GeoLoc;
+			productReference = 575635241940826D0004598D /* GeoLoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5756353E1940826E0004598D /* GeoLocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575635531940826E0004598D /* Build configuration list for PBXNativeTarget "GeoLocTests" */;
+			buildPhases = (
+				5756353B1940826E0004598D /* Sources */,
+				5756353C1940826E0004598D /* Frameworks */,
+				5756353D1940826E0004598D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575635451940826E0004598D /* PBXTargetDependency */,
+			);
+			name = GeoLocTests;
+			productName = GeoLocTests;
+			productReference = 5756353F1940826E0004598D /* GeoLocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5756351C1940826D0004598D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GL;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					5756353E1940826E0004598D = {
+						TestTargetID = 575635231940826D0004598D;
+					};
+				};
+			};
+			buildConfigurationList = 5756351F1940826D0004598D /* Build configuration list for PBXProject "GeoLoc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5756351B1940826D0004598D;
+			productRefGroup = 575635251940826D0004598D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575635231940826D0004598D /* GeoLoc */,
+				5756353E1940826E0004598D /* GeoLocTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575635221940826D0004598D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F9D3141948459200F48D23 /* point@2x.png in Resources */,
+				84F9D3121948459200F48D23 /* menu@2x.png in Resources */,
+				84F9D3151948459200F48D23 /* recOff.png in Resources */,
+				84F9D3171948459200F48D23 /* recOn.png in Resources */,
+				5756356719409AD80004598D /* bgnd_dark.png in Resources */,
+				84F9D3131948459200F48D23 /* point.png in Resources */,
+				84F9D3101948459200F48D23 /* FoundMe@2x.png in Resources */,
+				5756356619409AD80004598D /* bgnd_dark-568h@2x.png in Resources */,
+				84FE656D194827E100E8B04A /* GLRootMapControllerViewController.xib in Resources */,
+				575635321940826D0004598D /* InfoPlist.strings in Resources */,
+				84F9D30F1948459200F48D23 /* FoundMe.png in Resources */,
+				84F9D3111948459200F48D23 /* menu.png in Resources */,
+				84F9D3191948459200F48D23 /* selfPoint.png in Resources */,
+				84F9D3181948459200F48D23 /* recOn@2x.png in Resources */,
+				5756356819409AD80004598D /* bgnd_dark@2x.png in Resources */,
+				84F9D31A1948459200F48D23 /* selfPoint@2x.png in Resources */,
+				5756356519409AD80004598D /* bgnd_dark-568h.png in Resources */,
+				84F9D3161948459200F48D23 /* recOff@2x.png in Resources */,
+				5756353A1940826E0004598D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5756353D1940826E0004598D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5756354B1940826E0004598D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575635201940826D0004598D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575635341940826D0004598D /* main.m in Sources */,
+				574EDC4A1946D9510080BFEA /* GLUserTrackLibrary.m in Sources */,
+				57F6CEC3194325B30074C616 /* GLUserTrackForSaved.m in Sources */,
+				575635381940826D0004598D /* GLAppDelegate.m in Sources */,
+				578A61891941CBBA00C67B9A /* GLMapPoint.m in Sources */,
+				578A618C1941CC4F00C67B9A /* GLMapPointSelf.m in Sources */,
+				574EDC4D1946DCFD0080BFEA /* GLHorizontalScroller.m in Sources */,
+				5756355C19408FBD0004598D /* GLRootMapControllerViewController.m in Sources */,
+				575635711940C9170004598D /* GLUserTrack.m in Sources */,
+				575635771940CE830004598D /* GLUserTrackView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5756353B1940826E0004598D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5756354D1940826E0004598D /* GeoLocTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575635451940826E0004598D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575635231940826D0004598D /* GeoLoc */;
+			targetProxy = 575635441940826E0004598D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575635301940826D0004598D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575635311940826D0004598D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		575635491940826E0004598D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5756354A1940826E0004598D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5756354E1940826E0004598D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5756354F1940826E0004598D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		575635511940826E0004598D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoLoc/GeoLoc-Prefix.pch";
+				INFOPLIST_FILE = "GeoLoc/GeoLoc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		575635521940826E0004598D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoLoc/GeoLoc-Prefix.pch";
+				INFOPLIST_FILE = "GeoLoc/GeoLoc-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		575635541940826E0004598D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoLoc.app/GeoLoc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoLoc/GeoLoc-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeoLocTests/GeoLocTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		575635551940826E0004598D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeoLoc.app/GeoLoc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeoLoc/GeoLoc-Prefix.pch";
+				INFOPLIST_FILE = "GeoLocTests/GeoLocTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5756351F1940826D0004598D /* Build configuration list for PBXProject "GeoLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5756354E1940826E0004598D /* Debug */,
+				5756354F1940826E0004598D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575635501940826E0004598D /* Build configuration list for PBXNativeTarget "GeoLoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575635511940826E0004598D /* Debug */,
+				575635521940826E0004598D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575635531940826E0004598D /* Build configuration list for PBXNativeTarget "GeoLocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575635541940826E0004598D /* Debug */,
+				575635551940826E0004598D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5756351C1940826D0004598D /* Project object */;
+}
